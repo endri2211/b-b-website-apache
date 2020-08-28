@@ -1,0 +1,147 @@
+/*-------------------DEFAULT BODY STYLE-----------------*/
+
+/*importazione del font da font.google.com*/
+@font-face {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Aleo Light'), local('Aleo-Light'), url(https://fonts.gstatic.com/s/aleo/v3/c4mg1nF8G8_syKbrxDJJn61_9KI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+  box-sizing:border-box
+}
+
+html{
+  height: 100%;
+}
+
+/*settaggio del colore background e del margine del body */
+body{
+  font-family: aleo, arial;
+  background-color: rgba(215, 187, 134, 0.76);
+  margin: 0;
+  height: 100%;
+}
+
+/*-------------------END DEFAULT BODY STYLE-----------------*/
+/*-------STRUTTURA PAGINA GENERALE----------*/
+
+
+#container{
+  align-content: center;
+  width: 84%; 
+  margin-top: 50px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+/*-------------------------------------------*/
+
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+#container h1 {
+  color: #87544E;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+#container ul {
+  font-size: 20px;
+}
+
+
+.camera1, .camera2, .camera3 {
+  height: 100%;
+}
+
+.column_info, .column_photo {
+  display: inline-block;
+
+}
+
+
+.column_info {
+  width: 30%
+}
+
+.column_photo  {
+  width: 60%;
+  height: auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+
+.camera1 > .column_info {
+  margin-top: 100px;
+  margin-right: 8%;
+}
+
+
+.camera2 > .column_info {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.camera3 > .column_info {
+  margin-top: 100px;
+  margin-right: 8%;
+}
+
+/* css del slideshow */
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* bottoni next & previous */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posiziona next sulla destra */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, cambia il colore a nero */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+/* per gli schermi piu piccoli, diminuisci il font size */
+/*@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+*/
+
+

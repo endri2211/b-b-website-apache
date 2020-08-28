@@ -1,0 +1,153 @@
+
+/*-------------------HEADER-----------------*/
+
+/* stile del logo del sito
+impostato a display block per centrarlo
+inlotre imposto i margini top e bottom a 0, metre left e right sono automatici
+il logo ha width 400px e per mantenere le proporzioni pongo height ad auto.
+il blocco sottostante è riferito all tag <img > con id= "logo" non al tag <div>*/
+#logo {
+  display: block;
+  margin:0px auto;
+  width: 255px;
+    }
+
+/*style of navbar*/
+.navbar{
+  overflow: auto;   
+  font-size: 20px;
+	background-color: rgb(215, 187, 134) ;
+}
+
+/* style of links of navbar*/
+.navbar a { 
+  float: left;
+  color: #fff; /* set color of font at white*/
+  text-align: center;/*to align text at center of box*/
+  padding: 14px 16px;
+  text-decoration: none;/*per nascondere lo stile di default dei link*/
+  width: 150px;/*per settare un uguale larghezza di tutti i link*/
+}
+
+
+
+/*fa riferimento al batton presente nella navbar utile per il logIn*/
+.navbar button{
+  float: right;
+  border:0;
+  height:52px;    /*settaggio di height e widthe per ottenere le stesse dimensioni dei link della navbar*/
+  width: 150px;
+  font-size: 20px;
+  font-family: aleo,arial;
+  color: #fff; 
+  background: transparent;
+  outline: none;
+}
+
+/* Change color on hover */
+.navbar button:hover,
+.navbar a:hover {
+  background-color: rgba(135, 84, 78, 0.61);
+}
+
+/*classe del div che rappresenta la freccia di puntamento della finsestra a scomparsa
+per il login */
+.freccia{
+  width: 0 ;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;  /*setto i bordi left, right e bottom per formare un triangolo */
+  border-right: 20px solid transparent; /*dimensione del bordo, stile del bordo e colore */
+  border-bottom: 20px solid white;
+  right: 55px;  /*posizionamanto per centrare la freccia*/
+  top:170px;
+  z-index: 2; /*utilizzo della proprieta z-index per mostrare il div al disopra di altri oggetti con z-index inferiore*/
+}
+  /*classe del div utilizzata come contenitore della form */
+._form{
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  position: absolute;
+  top: 180px;
+  right: 15px;
+  padding: 15px;
+  color: rgb(215, 187, 134);
+  background-color: white;
+  z-index: 2; 
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.5); /*obreggiatura della box */
+  border-radius: 3px ;  /*arrotondamento degli spigoli*/
+}
+
+/*-------------------END HEADER STYLE-----------------*/
+
+/*onfocus input box */
+#user:focus,
+#pwd:focus{
+  box-shadow: 0 0 5px #87544E;
+  border: 1px solid #87544E;
+}
+
+/*style of filedset */
+#inputs,
+#action{
+  border: 0;
+  padding: 0;
+  text-align: center;
+}
+/*style of input box in*/
+#user,
+#pwd{
+  margin-top: 10px;
+  width: 250px;
+  height: 30px;
+  border:0;
+  border-bottom:1px solid #87544E ;
+  outline: none;  /*per non visualizzare lo stile di default di elementi selezionati*/*/
+  box-shadow: inset 0 0 8px #eee;
+  font-family: aleo, arial;
+  font-size: 14px;
+  padding-left: 10px;
+  border-radius: 3px;
+
+}
+/*style of SUBMIT input */
+#subLogIn,
+#subLogOut{
+  width: 250px;
+  height: 30px;
+  border:0;
+  background-color:#87544E; 
+  font-family: aleo,arial;
+  font-size: 20px;
+  font-weight: bold;
+  color:#fff;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  border-radius: 3px;
+}
+
+
+/*style del input  submit  on-mouse-over */
+#subLogIn:hover,
+#subLogOut:hover{
+  background-color: rgba(135, 84, 78, 0.61);
+  color: #fff;
+}
+
+
+/*-------------------END STYLE OF VARIOUS INPUT BOX-----------------*/
+
+/*-------------------SHOW LogOut-----------------*/
+
+/* style of user-photo in LogOut form */
+.acc_foto_out{
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  display: block;
+  margin: 10px auto 10px auto;
+}
+/*logOut submit button*/
+#subLogOut{
+  margin : 15px auto 0 auto;

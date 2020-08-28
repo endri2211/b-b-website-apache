@@ -1,0 +1,79 @@
+
+@font-face {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Aleo Light'), local('Aleo-Light'), url(https://fonts.gstatic.com/s/aleo/v3/c4mg1nF8G8_syKbrxDJJn61_9KI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+* {box-sizing:border-box}
+body{
+  font-family: aleo, arial;
+  background-color: rgba(215, 187, 134, 0.76);
+  margin: 0;
+  height: 100%;
+  color: #87544E;
+}
+
+a{
+  text-decoration: none;
+  color:#87544E;
+}
+
+#container{
+  width: 84%;
+  margin: 0 auto 0 auto;
+  margin-top: 0px;
+  background-color: white;
+}
+
+#container p{
+  text-align: center;
+}
+
+.immagine img{
+  width: 100%;
+  margin: 0;
+}
+
+
+
+#container_inf{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.title{
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.block{
+  flex-grow: 3;
+  width: 25%;
+  padding: 0 20px 0 20px;
+
+}
+
+.indicazioni p{
+  margin: 16px auto 0px auto;
+  padding: 18px 300px 46px 300px;
+}
+
+span{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.icon_info{
+  display: block;
+  margin: 10px auto 10px auto;
+  height:32px ;
+  width:32px;
+}
+
+.table{
+  list-style-type: none;
+}
